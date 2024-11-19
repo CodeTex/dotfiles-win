@@ -1,0 +1,14 @@
+[core]
+	editor = nvim
+[alias]
+	co = checkout
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[fetch]
+	prune = true
+[init]
+	defaultBranch = main
+[status]
+	short = true
+[user]
+	name = CodeTex
+	email = 29424456+CodeTex@users.noreply.github.com
