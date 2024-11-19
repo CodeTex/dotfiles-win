@@ -5,7 +5,7 @@ Set-Alias -Name l -Value Get-ChildItemPretty
 Set-Alias -Name la -Value Get-ChildItemPretty
 Set-Alias -Name ll -Value Get-ChildItemPretty
 Set-Alias -Name ls -Value Get-ChildItemPretty
-Set-Alias -Name np -Value "C:\Program Files\Notepad++\notepad++.exe"
+Set-Alias -Name np -Value "$ENV:PROGRAMFILES\Notepad++\notepad++.exe"
 Set-Alias -Name touch -Value New-File
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name vim -Value nvim
