@@ -1,0 +1,181 @@
+{
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.linkedEditing": true,
+  "editor.guides.indentation": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.fontFamily": "FiraCode Nerd Font, MesloLGS NF, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "terminal.integrated.inheritEnv": false,
+  "vscode-office.openOutline": false,
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.csv": "default",
+    "*.png": "default",
+    "*.ico": "imagePreview.previewEditor"
+  },
+  "workbench.startupEditor": "none",
+  "dart.previewFlutterUiGuides": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "julia.symbolCacheDownload": true,
+  "julia.enableCrashReporter": false,
+  "julia.enableTelemetry": false,
+  "go.toolsManagement.autoUpdate": true,
+  "python.formatting.provider": "none",
+  "python.linting.enabled": false,
+  "python.linting.lintOnSave": false,
+  "python.linting.flake8Enabled": false,
+  "python.linting.mypyEnabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false,
+  "redhat.telemetry.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "[c]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[cpp]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.stickyScroll.enabled": true,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "[dockerfile]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  "[julia]": {
+    "editor.wordSeparators": "`~#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "julialang.language-julia"
+  },
+  "[makefile]": {
+    "editor.insertSpaces": false
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.fontLigatures": false
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[python]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.rulers": [
+      {
+        "column": 100,
+        "color": "#43464b"
+      },
+      {
+        "column": 120,
+        "color": "#63666A"
+      }
+    ]
+  },
+  "ruff.lineLength": 120,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "files.eol": "\n"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "gitlens.codeLens.scopes": ["document"],
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "dart.openDevTools": "flutter",
+  "[lua]": {
+    "editor.defaultFormatter": "yinfei.luahelper"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "lldb.suppressUpdateNotifications": true,
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "cmake.showOptionsMovedNotification": false,
+  "cmake.configureOnOpen": true,
+  "github.copilot.editor.enableAutoCompletions": true
+}
