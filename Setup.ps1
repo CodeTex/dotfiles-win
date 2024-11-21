@@ -1,3 +1,9 @@
+# Check if running as Administrator
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Write-Host "This script must be run as Administrator." -ForegroundColor Red
+    exit 1
+}
+
 # Linked Files (Destination => Source)
 $symlinks = @{
     $PROFILE.CurrentUserAllHosts                                                                    = ".\Profile.ps1"
@@ -17,6 +23,7 @@ $wingetDeps = @(
 	"Microsoft.WindowsTerminal"
 	"Neovim.Neovim"
 	"Notepad++.Notepad++"
+	"SumatraPDF.SumatraPDF"
 	"Zen-Team.Zen-Browser.Optimized"
 # Tools
 	"ajeetdsouza.zoxide"
