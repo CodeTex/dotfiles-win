@@ -56,16 +56,6 @@
         "list": 
         [
             {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "font": 
-                {
-                    "face": "JetBrainsMono Nerd Font Mono"
-                },
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt"
-            },
-            {
                 "font": 
                 {
                     "face": "JetBrainsMono Nerd Font Mono"
@@ -74,6 +64,16 @@
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+			{
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "font": 
+                {
+                    "face": "JetBrainsMono Nerd Font Mono"
+                },
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
             },
             {
                 "font": 

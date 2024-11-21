@@ -41,6 +41,7 @@ $wingetDeps = @(
 
 $wingetDepsOpt = @(
 # Programs
+	"Apple.iCloud"
 	"Discord.Discord"
 	"Google.AndroidStudio"
 	"Readdle.Spark"

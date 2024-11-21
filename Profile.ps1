@@ -3,6 +3,7 @@ Set-Alias -Name cat -Value bat
 Set-Alias -Name df -Value Get-Volume
 Set-Alias -Name l -Value Get-ChildItemPretty
 Set-Alias -Name la -Value Get-ChildItemPretty
+Set-Alias -Name lgit -Value lazygit
 Set-Alias -Name ll -Value Get-ChildItemPretty
 Set-Alias -Name ls -Value Get-ChildItemPretty
 Set-Alias -Name np -Value "$ENV:PROGRAMFILES\Notepad++\notepad++.exe"
