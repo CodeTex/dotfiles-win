@@ -55,6 +55,7 @@ $wingetDepsOpt = @(
 # Tools
 # Programming Languages
 	"GoLang.Go"
+	"Julialang.Julia"
 	"OpenJS.NodeJS"
 	"Rustlang.Rustup"
 	"zig.zig"
@@ -93,7 +94,10 @@ Write-Host "Installing missing dependencies..."
 $installedWingetDeps = winget list | Out-String
 foreach ($wingetDep in $wingetDeps) {
     if ($installedWingetDeps -notmatch [regex]::Escape($wingetDep)) {
-        winget install --id $wingetDep
+		winget install --id $wingetDep
+		if ($LASTEXITCODE -ne 0) {
+			Write-Host "Failed to install: $wingetDep (Exit Code: $LASTEXITCODE)" -ForegroundColor Red
+		}
     }
 }
 

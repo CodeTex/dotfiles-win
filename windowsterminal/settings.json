@@ -65,7 +65,7 @@
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
             },
-			{
+            {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "font": 
                 {
@@ -94,6 +94,12 @@
                 "hidden": false,
                 "name": "Git Bash",
                 "source": "Git"
+            },
+            {
+                "guid": "{4e27f4db-7c55-564f-af04-19d8f3a30148}",
+                "hidden": false,
+                "name": "Julia",
+                "source": "JuliaComputingInc.Julia_5z4q23t4ga8jg"
             }
         ]
     },
