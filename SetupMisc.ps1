@@ -10,6 +10,14 @@ if ($juliaPM) {
 	Write-Host "✔ $version is installed ($pmVersion)" -ForegroundColor Green
 }
 
+# --- Lua ---
+$luaPM = Get-Command luarocks -ErrorAction SilentlyContinue
+if ($luaPM) {
+  $version = lua -v
+  $pmVersion = luarocks --version
+	Write-Host "✔ $version is installed ($pmVersion)" -ForegroundColor Green
+}
+
 # --- NodeJS ---
 $packages = @(
 	"neovim"
@@ -36,6 +44,7 @@ $packages = @(
 	"neovim"
 	"pip"
 	"pipdeptree"
+  "ruff
 )
 
 $pythonPM = Get-Command pip -ErrorAction SilentlyContinue
