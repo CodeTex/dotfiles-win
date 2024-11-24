@@ -54,6 +54,7 @@ $wingetDepsOpt = @(
 	"Valve.Steam"
 # Tools
 # Programming Languages
+	"DenoLand.Deno"
 	"GoLang.Go"
 	"Julialang.Julia"
 	"OpenJS.NodeJS"
