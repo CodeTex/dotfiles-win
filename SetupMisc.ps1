@@ -44,7 +44,7 @@ $packages = @(
 	"neovim"
 	"pip"
 	"pipdeptree"
-  "ruff
+  "ruff"
 )
 
 $pythonPM = Get-Command pip -ErrorAction SilentlyContinue
@@ -70,6 +70,7 @@ if ($pythonPM) {
 $tools = @(
 	"ast-grep"
 	"neovim"
+  "silicon"
 )
 
 $rustPM = Get-Command cargo -ErrorAction SilentlyContinue

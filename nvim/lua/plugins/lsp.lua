@@ -1,10 +1,15 @@
 return {
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      "debugpy",
-    },
-  },
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = {
+  --     "debugpy",
+  --     "deno",
+  --     "pyright",
+  --     "ruff",
+  --     "stylua",
+  --     "shfmt",
+  --   },
+  -- },
   {
     "neovim/nvim-lspconfig",
     opts = {
