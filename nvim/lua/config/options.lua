@@ -26,7 +26,7 @@ vim.g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
 -- This sets `vim.o.shell` and does some additional configuration for:
 -- * pwsh
 -- * powershell
--- LazyVim.terminal.setup("pwsh")
+LazyVim.terminal.setup("pwsh")
 
 -- Set LSP servers to be ignored when used with `util.root.detectors.lsp`
 -- for detecting the LSP root
@@ -113,3 +113,4 @@ end
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+
