@@ -64,9 +64,9 @@ $wingetDepsOpt = @(
 
 $chocoDeps = @(
 	"firacode"
-    "mingw"
+  "mingw"
 	"nerd-fonts-jetbrainsmono"
-    "sqlite"
+  "sqlite"
 )
 
 # PS Modules
