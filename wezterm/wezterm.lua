@@ -152,4 +152,3 @@ end)
 
 -- Finish
 return config
-

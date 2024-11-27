@@ -17,8 +17,8 @@ $symlinks = @{
 
 $wingetDeps = @(
 # Programs
-  "Chromium.ChroneDriver"
-	"Microsoft.PowerShell"
+  "Google.Chrome.Dev"
+  "Microsoft.PowerShell"
 	"Microsoft.PowerToys"
 	"Microsoft.VisualStudioCode"
 	"Microsoft.WindowsTerminal"
