@@ -6,6 +6,7 @@ Set-Alias -Name la -Value Get-ChildItemPretty
 Set-Alias -Name lgit -Value lazygit
 Set-Alias -Name ll -Value Get-ChildItemPretty
 Set-Alias -Name ls -Value Get-ChildItemPretty
+Set-Alias -Name make -Value "$ENV:PROGRAMDATA\mingw64\mingw64\bin\mingw32-make.exe"
 Set-Alias -Name np -Value "$ENV:PROGRAMFILES\Notepad++\notepad++.exe"
 Set-Alias -Name touch -Value New-File
 Set-Alias -Name vi -Value nvim
