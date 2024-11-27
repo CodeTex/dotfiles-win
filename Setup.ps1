@@ -17,6 +17,7 @@ $symlinks = @{
 
 $wingetDeps = @(
 # Programs
+  "Chromium.ChroneDriver"
 	"Microsoft.PowerShell"
 	"Microsoft.PowerToys"
 	"Microsoft.VisualStudioCode"
@@ -43,7 +44,6 @@ $wingetDeps = @(
 	"Python.Launcher"
 	"Python.Python.3.12"
 	"Python.Python.3.13"
-
 )
 
 $wingetDepsOpt = @(
