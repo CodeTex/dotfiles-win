@@ -1,3 +1,44 @@
+return {
+  {
+    "williamboman/mason.nvim",
+    opts = { ensure_installed = { "debugpy" } },
+  },
+  {
+    "nvim-neotest/neotest-python",
+    config = function()
+      local mason_path = vim.fn.glob(vim.fn.stdpath("data") .. "/mason")
+      local path = mason_path .. "/packages/debugpy/venv"
+      if vim.fn.has("win32") == 1 then
+        path = path .. "/Scripts/python.exe"
+      else
+        path = path .. "/bin/python"
+      end
+      require("dap-python").setup(path)
+    end,
+  },
+  {
+    "nvim-neotest/neotest",
+    opts = {
+      adapters = {
+        ["neotest-python"] = {
+          dap = {
+            justMyCode = false,
+            console = "integratedTerminal",
+          },
+          args = { "--log-level", "DEBUG", "--quiet" },
+          runner = "pytest",
+          python = {
+            -- "venv/bin/python",
+            -- ".venv/bin/python",
+            -- "venv/Scripts/python.exe",
+            ".venv/Scripts/python.exe",
+          },
+        },
+      },
+    },
+  },
+}
+
 -- vim.g.lazyvim_python_lsp = "pyright"
 -- vim.g.lazyvim_python_ruff = "ruff"
 --
