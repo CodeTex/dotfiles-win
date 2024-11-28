@@ -129,17 +129,18 @@ end
 -- tmux status
 wezterm.on("update-right-status", function(window, _)
 	local SOLID_LEFT_ARROW = ""
-	local ARROW_FOREGROUND = { Foreground = { Color = "#cba6f7" } } -- Catppuccin Mocha Mauv
 	local prefix = ""
+	local ARROW_FOREGROUND = { Foreground = { Color = "#181825" } } -- Catppuccin Mocha Mantle
 
 	if window:leader_is_active() then
 		prefix = " " .. utf8.char(0x1f47e) -- space invader
 		SOLID_LEFT_ARROW = utf8.char(0xe0b2)
 	end
 
-	-- arrow color based on if tab is not first pane
-	if window:active_tab():tab_id() ~= 0 then
-		ARROW_FOREGROUND = { Foreground = { Color = "#181825" } } -- Catppuccin Mocha Mantle
+	-- arrow color based on if tab is first pane
+	wezterm.log_info("tab id: " .. tostring(window:active_tab():tab_id()))
+	if window:active_tab():tab_id() == 0 then
+		ARROW_FOREGROUND = { Foreground = { Color = "#cba6f7" } } -- Catppuccin Mocha Mauve
 	end
 
 	window:set_left_status(wezterm.format({
