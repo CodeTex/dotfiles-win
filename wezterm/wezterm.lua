@@ -19,8 +19,8 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 11
 
 -- Window
-config.initial_rows = 45
-config.initial_cols = 180
+config.initial_rows = 30
+config.initial_cols = 120
 config.window_decorations = "RESIZE"
 config.window_background_opacity = opacity
 config.window_close_confirmation = "NeverPrompt"
