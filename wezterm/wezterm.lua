@@ -1,3 +1,5 @@
+---@diagnostic disable:undefined-global
+
 -- Initialize
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
@@ -43,7 +45,7 @@ config.keys = {
 }
 
 --- Tmux
-config.leader = { key = "q", mods = "ALT", timeout_milliseconds = 2000 }
+config.leader = { key = "f", mods = "ALT", timeout_milliseconds = 2000 }
 config.keys = {
 	{
 		mods = "LEADER",
