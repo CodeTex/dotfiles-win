@@ -1,15 +1,14 @@
 return {
-  {
-    "catppuccin/nvim",
-    lazy = true,
-    name = "catppuccin",
-    priority = 1000,
-  },
-  { "nvim-tree/nvim-web-devicons", lazy = true },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
+    {
+      "catppuccin/nvim",
+      lazy = true,
+      name = "catppuccin",
+        priority = 1000,
     },
-  },
-}
+    {
+      "LazyVim/LazyVim",
+      opts = {
+        colorscheme = "catppuccin",
+      },
+    },
+  }
