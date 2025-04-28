@@ -76,6 +76,31 @@ function Show-Command {
     Get-Command $Name | Select-Object -ExpandProperty Definition
 }
 
+function Get-Subnet-Devices {
+	<#
+    .SYNOPSIS
+        Wrapper for ping, arp and nslookup to get available information about all devices in subnet.
+    #>
+	param (
+        $Subnet
+    )
+	1..254 | ForEach-Object{
+		Start-Process -WindowStyle Hidden ping.exe -Argumentlist "-n 1 -l 0 -f -i 2 -w 1 -4 $SubNet$_"
+	}
+	$Computers = (arp.exe -a | Select-String "$SubNet.*dynam") -replace ' +',',' | 
+		ConvertFrom-Csv -Header Computername,IPv4,MAC,x,Vendor |
+		Select Computername,IPv4,MAC
+
+	ForEach ($Computer in $Computers){
+		nslookup $Computer.IPv4 |
+		Select-String -Pattern "^Name:\s+([^\.]+).*$" |
+		ForEach-Object{
+		  $Computer.Computername = $_.Matches.Groups[1].Value
+		}
+	}
+	$Computers
+}
+
 # Environment Variables -------------------------
 $ENV:DotfilesLocalRepo = Find-DotfilesRepository -ProfilePath $PSScriptRoot
 $ENV:STARSHIP_CONFIG = "$ENV:DotfilesLocalRepo\starship\starship.toml"
