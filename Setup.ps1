@@ -49,12 +49,12 @@ $wingetDeps = @(
 $wingetDepsOpt = @(
 # Programs
 	"Discord.Discord"
-	"Google.AndroidStudio"
-	"Readdle.Spark"
-	"Valve.Steam"
+	# "Google.AndroidStudio"
+	# "Readdle.Spark"
+	# "Valve.Steam"
 # Tools
 # Programming Languages
-	"DenoLand.Deno"
+	# "DenoLand.Deno"
 	"GoLang.Go"
 	"Julialang.Julia"
 	"OpenJS.NodeJS"
